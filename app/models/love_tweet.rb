@@ -1,0 +1,2 @@
+class LoveTweet < ApplicationRecord
+end
