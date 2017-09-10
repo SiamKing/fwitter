@@ -15,13 +15,13 @@ import HomeController from '../home/home.controller'
         $stateProvider
           .state('home', {
             url: '/',
-            template: `<h1>{{ vm.name }}</h1>`,
+            template: require("html-loader!../home/home.html"),
             controller: HomeController,
             controllerAs: 'vm'
           })
-          .state('home.tweets', {
+          .state('tweets', {
             url: '/tweets',
-            template: `<h1>{{ name }}</h1>`,
+            template: require("html-loader!../tweets/tweets.html"),
             controller: TweetController,
             controllerAs: 'vm'
           })
