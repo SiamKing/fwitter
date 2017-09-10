@@ -32,6 +32,16 @@
   dependencies:
     tslib "^1.7.1"
 
+"@uirouter/angularjs@latest":
+  version "1.0.6"
+  resolved "https://registry.yarnpkg.com/@uirouter/angularjs/-/angularjs-1.0.6.tgz#11fa769475d1e428665d38f7eb15586bc185cd69"
+  dependencies:
+    "@uirouter/core" "=5.0.6"
+
+"@uirouter/core@=5.0.6":
+  version "5.0.6"
+  resolved "https://registry.yarnpkg.com/@uirouter/core/-/core-5.0.6.tgz#251e1fc4d6ce8fe47e374bb86971e68a2ef1b323"
+
 abbrev@1:
   version "1.1.0"
   resolved "https://registry.yarnpkg.com/abbrev/-/abbrev-1.1.0.tgz#d0554c2256636e2f56e7c2e5ad183f859428d81f"
@@ -104,6 +114,10 @@ alphanum-sort@^1.0.1, alphanum-sort@^1.0.2:
 amdefine@>=0.0.4:
   version "1.0.1"
   resolved "https://registry.yarnpkg.com/amdefine/-/amdefine-1.0.1.tgz#4a5282ac164729e93619bcfd3ad151f817ce91f5"
+
+angular@1.5.8:
+  version "1.5.8"
+  resolved "https://registry.yarnpkg.com/angular/-/angular-1.5.8.tgz#925a5392b8c212d09572dc446db7e01264e094cb"
 
 ansi-html@0.0.7:
   version "0.0.7"
@@ -824,6 +838,10 @@ boom@2.x.x:
   resolved "https://registry.yarnpkg.com/boom/-/boom-2.10.1.tgz#39c8918ceff5799f83f9492a848f625add0c766f"
   dependencies:
     hoek "2.x.x"
+
+bootstrap@latest:
+  version "3.3.7"
+  resolved "https://registry.yarnpkg.com/bootstrap/-/bootstrap-3.3.7.tgz#5a389394549f23330875a3b150656574f8a9eb71"
 
 brace-expansion@^1.1.7:
   version "1.1.8"
@@ -2937,6 +2955,10 @@ mkdirp@0.5.x, "mkdirp@>=0.5 0", mkdirp@^0.5.0, mkdirp@^0.5.1, mkdirp@~0.5.0, mkd
   resolved "https://registry.yarnpkg.com/mkdirp/-/mkdirp-0.5.1.tgz#30057438eac6cf7f8c4767f38648d6697d75c903"
   dependencies:
     minimist "0.0.8"
+
+moment@latest:
+  version "2.18.1"
+  resolved "https://registry.yarnpkg.com/moment/-/moment-2.18.1.tgz#c36193dd3ce1c2eed2adb7c802dbbc77a81b1c0f"
 
 ms@2.0.0:
   version "2.0.0"
