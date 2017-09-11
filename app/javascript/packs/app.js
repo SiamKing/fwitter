@@ -1,6 +1,6 @@
 import angular from 'angular';
 import uirouter from '@uirouter/angularjs';
-import TweetController from '../tweets/tweet.controller';
+import UserController from '../user/user.controller';
 import HomeController from '../home/home.controller'
 
 
@@ -9,7 +9,7 @@ import HomeController from '../home/home.controller'
 
   angular
     .module('fwitter', [uirouter])
-    .controller(TweetController)
+    .controller(UserController)
     .controller(HomeController)
     .config(['$stateProvider', '$urlRouterProvider', function($stateProvider, $urlRouterProvider) {
         $stateProvider
@@ -19,10 +19,10 @@ import HomeController from '../home/home.controller'
             controller: HomeController,
             controllerAs: 'vm'
           })
-          .state('tweets', {
-            url: '/tweets',
-            template: require("html-loader!../tweets/tweets.html"),
-            controller: TweetController,
+          .state('home.userProfile', {
+            url: 'userProfile',
+            template: require("html-loader!../user/user.html"),
+            controller: UserController,
             controllerAs: 'vm'
           })
 
