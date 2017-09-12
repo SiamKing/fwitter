@@ -16,3 +16,24 @@
 
  @import "bootstrap-sprockets";
  @import "bootstrap";
+
+
+div.sidebar-left {
+  float: left;
+  padding: 30px;
+  width: 25%;
+  height: 100vh;
+  background-color: #2980b9;
+}
+
+div.main-content {
+  padding: 30px;
+  float: left;
+  width: 75%;
+  height: 100vh;
+  box-sizing: border-box;
+}
+
+.navbar {
+  margin-bottom: 0;
+}

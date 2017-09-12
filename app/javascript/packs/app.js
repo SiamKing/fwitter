@@ -1,31 +1,16 @@
-import angular from 'angular';
-import uirouter from '@uirouter/angularjs';
-import UserController from '../user/user.controller';
-import HomeController from '../home/home.controller'
 
+import angular from 'angular';
+import accordion from 'angular-ui-bootstrap/src/accordion';
+import dropdown from 'angular-ui-bootstrap/src/dropdown';
+import uirouter from '@uirouter/angularjs';
+import routes from './routes';
+import tabsComponent from '../components/tab-component/tabs.component'
 
 (() => {
   'user strict';
 
   angular
-    .module('fwitter', [uirouter])
-    .controller(UserController)
-    .controller(HomeController)
-    .config(['$stateProvider', '$urlRouterProvider', function($stateProvider, $urlRouterProvider) {
-        $stateProvider
-          .state('home', {
-            url: '/',
-            template: require("html-loader!../home/home.html"),
-            controller: HomeController,
-            controllerAs: 'vm'
-          })
-          .state('home.userProfile', {
-            url: 'userProfile',
-            template: require("html-loader!../user/user.html"),
-            controller: UserController,
-            controllerAs: 'vm'
-          })
-
-        $urlRouterProvider.otherwise('/')
-    }])
+    .module('fwitter', [uirouter, accordion, dropdown])
+    .config(routes)
+    .component('tabsComponent', tabsComponent)
 })();
