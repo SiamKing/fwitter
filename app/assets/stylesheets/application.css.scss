@@ -17,6 +17,19 @@
  @import "bootstrap-sprockets";
  @import "bootstrap";
 
+.all-content {
+  width: 100vw;
+  height: 100vh;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+a:active {
+  color: white;
+}
 
 div.sidebar-left {
   float: left;
@@ -24,6 +37,7 @@ div.sidebar-left {
   width: 25%;
   height: 100vh;
   background-color: #2980b9;
+  box-sizing: border-box;
 }
 
 div.main-content {
@@ -36,4 +50,9 @@ div.main-content {
 
 .navbar {
   margin-bottom: 0;
+}
+
+.small-text {
+  font-size: 10px;
+  color: blue;
 }

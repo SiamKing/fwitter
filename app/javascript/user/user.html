@@ -1,10 +1,17 @@
-  <tabs class="list-group">
-    <pane class="list-group-item" title="Tweets"></pane>
-    <pane class="list-group-item" title="Create a Tweet"></pane>
-    <pane class="list-group-item" title="Edit Profile"></pane>
-    <pane class="list-group-item" title="Bio"></pane>
-  </tabs>
-<div class="main-content">
 
-  <h1>{{ vm.name }}</h1>
+<div class="sidebar-left">
+    <div class="list-group-item"
+        ng-class="{active:pane.selected}"
+        ng-repeat="pane in $ctrl.panes">
+        <a
+            href=""
+            ng-click="$ctrl.select(pane)">
+            {{ pane.title }}
+        </a>
+    </div>
+</div>
+
+<div
+    class="main-content"
+    ng-transclude>
 </div>
